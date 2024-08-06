@@ -1,0 +1,121 @@
+#certifications {
+    padding: 0;
+    background-color: #fff; /* White background */
+    color: #000; /* Dark text for readability */
+
+}
+
+#certifications .section_title_1 {
+    margin-bottom: 0px;
+}
+
+#certifications .section_title_1 .title {
+    font-size: 36px;
+    color: #f39c12; /* Keep the highlight color */
+    text-transform: uppercase;
+}
+
+#certifications .section_title_1 .sub_title {
+    color: #333; /* Slightly darker text for subtitle */
+}
+
+#certifications .line_double {
+    width: 80px;
+    margin: 20px auto;
+}
+
+
+/* Certificate Item Styles */
+.default-certification-item {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 15px;
+    background-color: #fff; /* White background for each certificate item */
+    border: 1px solid #ddd; /* Light border to define certificate items */
+    border-radius: 8px; /* Optional: for rounded corners */
+}
+
+.default-certification-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.default-certification-item .overlay-box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6); /* Dark overlay */
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff; /* White text on overlay */
+    text-align: center;
+}
+
+.default-certification-item:hover .overlay-box {
+    opacity: 1;
+}
+
+.default-certification-item .overlay-box .fa-eye {
+    font-size: 24px;
+}
+
+.default-certification-item .tag {
+    margin-top: 10px;
+}
+
+.default-certification-item .tag ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.default-certification-item .tag ul li {
+    font-size: 14px;
+}
+
+/* Pagination Styles */
+.pagination {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.pagination .page-item {
+    margin: 0 5px;
+}
+
+.pagination .page-link {
+    display: block;
+    padding: 10px 15px;
+    color: #000; /* Dark text */
+    background-color: #f9f9f9; /* Light background */
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    border: 1px solid #ddd; /* Light border for pagination */
+}
+
+.pagination .page-link:hover {
+    background-color: #f39c12; /* Highlight color on hover */
+    color: #fff; /* White text on hover */
+}
+
+.pagination .active .page-link {
+    background-color: #f39c12; /* Highlight color for active page */
+    color: #fff; /* White text for active page */
+    cursor: default;
+}
+
+.pagination .disabled .page-link {
+    background-color: #e0e0e0; /* Light gray for disabled */
+    color: #b3b3b3; /* Gray text */
+    cursor: not-allowed;
+}
