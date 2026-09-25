@@ -126,7 +126,7 @@ Motivated and detail-oriented professional specializing in software development,
 <div class="text-center">
 <i class="ri-user-line text-4xl text-gray-400 dark:text-gray-500 mb-2"></i>
 <p class="text-sm text-gray-500 dark:text-gray-400">Upload your photo here</p>
-<img src="Images/photo.png" alt="Yuvraj Trivedi">
+<img src="Images/photo.png" alt="Yuvraj Trivedi" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=500&q=80';">
 </div>
 </div>
 </div>
@@ -500,7 +500,7 @@ title: "Web Design & Development",
 issuer: "Skill India Digital",
 date: "2024",
 description: "Comprehensive certification in modern web development technologies and design principles.",
-image: "https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?w=500&auto=format&fit=crop&q=80"
+image: "https://images.unsplash.com/photo-1547658719-da2b51169166?w=500&auto=format&fit=crop&q=80"
 },
 {
 title: "SQL (Intermediate)",
@@ -521,14 +521,14 @@ title: "Agile Software Testing",
 issuer: "ISTQB",
 date: "2024",
 description: "Agile testing methodologies, continuous integration, and quality assurance practices.",
-image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=500&auto=format&fit=crop&q=80"
+image: "https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=500&auto=format&fit=crop&q=80"
 },
 {
 title: "Python for Data Analysis",
 issuer: "Coursera",
 date: "2023",
 description: "Data manipulation, analysis, and visualization using Python libraries like Pandas and NumPy.",
-image: "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=500&auto=format&fit=crop&q=80"
+image: "https://images.unsplash.com/photo-1526379095098-d400fd0bf935?w=500&auto=format&fit=crop&q=80"
 },
 {
 title: "Java Programming Certification",
@@ -542,28 +542,28 @@ title: "Email Etiquette",
 issuer: "TCS iON",
 date: "2024",
 description: "Professional email communication skills, business correspondence, and workplace communication standards.",
-image: "https://images.unsplash.com/photo-1577563908411-50cb989d6bab?w=500&auto=format&fit=crop&q=80"
+image: "https://images.unsplash.com/photo-1596526131083-e8c633c948d2?w=500&auto=format&fit=crop&q=80"
 },
 {
 title: "Communication Skills",
 issuer: "TCS iON",
 date: "2024",
 description: "Effective workplace communication, presentation skills, and interpersonal communication techniques.",
-image: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=500&auto=format&fit=crop&q=80"
+image: "https://images.unsplash.com/photo-1573164713988-8665fc963095?w=500&auto=format&fit=crop&q=80"
 },
 {
 title: "JavaScript (Intermediate)",
 issuer: "HackerRank",
 date: "2024",
 description: "Advanced JavaScript programming concepts, DOM manipulation, and modern ES6+ features.",
-image: "https://images.unsplash.com/photo-1627398240411-8bbeb7364119?w=500&auto=format&fit=crop&q=80"
+image: "https://images.unsplash.com/photo-1627398248963-fbe56e428c0b?w=500&auto=format&fit=crop&q=80"
 },
 {
 title: "Getting Started with AI on Jetson Nano",
 issuer: "NVIDIA Deep Learning Institute",
 date: "2024",
 description: "Introduction to AI development on edge devices, computer vision, and deep learning fundamentals.",
-image: "https://images.unsplash.com/photo-1555255707-c07966088b7b?w=500&auto=format&fit=crop&q=80"
+image: "https://images.unsplash.com/photo-1535223289827-42f1e9919769?w=500&auto=format&fit=crop&q=80"
 }
 ];
 const itemsPerPage = 3;
@@ -646,7 +646,7 @@ const experiences = [
 title: "Engineer",
 company: "Tech Mahindra · Full-time",
 duration: "Apr 2025 – Present · On-site",
-companyLogo: "Images/TechM.png",
+companyLogo: "https://ui-avatars.com/api/?name=Tech+Mahindra&background=e11d48&color=fff&bold=true",
 companyBg: "bg-blue-600",
 primaryColor: "primary",
 responsibilities: [
@@ -674,7 +674,7 @@ image: "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=800&auto=
 title: "Junior Software Engineer",
 company: "TechCorp Solutions · Full-time",
 duration: "Jun 2023 – Dec 2023 · On-site",
-companyLogo: "https://ui-avatars.com/api/?name=TechCorp&background=0f172a&color=fff",
+companyLogo: "https://ui-avatars.com/api/?name=TechCorp+Solutions&background=0f172a&color=fff&bold=true",
 companyBg: "bg-purple-600",
 primaryColor: "primary",
 responsibilities: [
@@ -688,7 +688,7 @@ image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=800&auto=for
 title: "Information Technology Analyst",
 company: "Digital Innovations Pvt. Ltd. · Full-time",
 duration: "Jan 2023 – Jun 2023 · On-site",
-companyLogo: "https://ui-avatars.com/api/?name=Digital+Innovations&background=ea580c&color=fff",
+companyLogo: "https://ui-avatars.com/api/?name=Digital+Innovations&background=64748b&color=fff&bold=true",
 companyBg: "bg-orange-600",
 primaryColor: "secondary",
 responsibilities: [
@@ -734,7 +734,7 @@ return `
 <div class="bg-white dark:bg-gray-800 p-4 sm:p-6 lg:p-8 rounded-xl shadow-lg theme-transition ${orderClass}">
 <div class="flex items-start space-x-3 sm:space-x-4 mb-4 sm:mb-6">
 <div class="w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center ${exp.companyBg} rounded-lg overflow-hidden flex-shrink-0">
-<img src="${exp.companyLogo}" alt="${exp.company} Logo" class="w-full h-full object-contain bg-white p-0.5">
+<img src="${exp.companyLogo}" alt="${exp.company} Logo" class="w-full h-full object-contain bg-white">
 </div>
 <div class="flex-1 min-w-0">
 <h3 class="text-lg sm:text-xl font-semibold leading-tight">${exp.title}</h3>
@@ -861,7 +861,7 @@ subtitle: "",
 description: "Comprehensive API testing solution using Postman and Newman for automated REST API validation.",
 tags: ["Postman", "Newman", "JavaScript"],
 tagColors: ["bg-orange-100 text-orange-800", "bg-red-100 text-red-800", "bg-yellow-100 text-yellow-800"],
-image: "https://images.unsplash.com/photo-1623282033815-40b05d96c903?w=800&auto=format&fit=crop&q=80",
+image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&auto=format&fit=crop&q=80",
 },
 {
 title: "Bug Tracking System",
@@ -869,7 +869,7 @@ subtitle: "",
 description: "Custom bug tracking and defect management system integrated with Jira for streamlined QA processes.",
 tags: ["Java", "Spring Boot", "MySQL"],
 tagColors: ["bg-indigo-100 text-indigo-800", "bg-pink-100 text-pink-800", "bg-cyan-100 text-cyan-800"],
-image: "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=800&auto=format&fit=crop&q=80",
+image: "https://images.unsplash.com/photo-1542831371-29b0f74f9713?w=800&auto=format&fit=crop&q=80",
 }
 ];
 
