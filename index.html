@@ -45,6 +45,7 @@ fontFamily: {
 </script>
 </head>
 <body class="font-inter bg-white dark:bg-gray-900 text-gray-900 dark:text-white theme-transition">
+
 <!-- Header -->
 <header class="fixed top-0 left-0 right-0 z-50 bg-white/90 dark:bg-gray-900/90 backdrop-blur-md border-b border-gray-200 dark:border-gray-700 theme-transition">
 <nav class="px-6 py-4">
@@ -86,8 +87,9 @@ fontFamily: {
 </div>
 </nav>
 </header>
+
 <!-- Hero Section -->
-<section id="home" class="min-h-screen flex items-center pt-20 px-6" style="background-image: url('https://readdy.ai/api/search-image?query=modern%20professional%20tech%20workspace%20with%20clean%20minimalist%20design%2C%20soft%20blue%20lighting%2C%20computer%20screens%20showing%20code%2C%20contemporary%20office%20environment%20with%20glass%20surfaces%20and%20geometric%20patterns%2C%20high-tech%20atmosphere%20with%20subtle%20gradients&width=1920&height=1080&seq=hero1&orientation=landscape'); background-size: cover; background-position: center;">
+<section id="home" class="min-h-screen flex items-center pt-20 px-6 relative" style="background-image: url('https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=1920&auto=format&fit=crop&q=80'); background-size: cover; background-position: center;">
 <div class="absolute inset-0 bg-white/80 dark:bg-gray-900/80 theme-transition"></div>
 <div class="relative z-10 w-full max-w-7xl mx-auto">
 <div class="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
@@ -124,9 +126,7 @@ Motivated and detail-oriented professional specializing in software development,
 <div class="w-64 h-64 sm:w-72 sm:h-72 lg:w-80 lg:h-80 rounded-2xl overflow-hidden shadow-2xl">
 <div class="w-full h-full bg-gray-200 dark:bg-gray-700 flex items-center justify-center">
 <div class="text-center">
-<i class="ri-user-line text-4xl text-gray-400 dark:text-gray-500 mb-2"></i>
-<p class="text-sm text-gray-500 dark:text-gray-400">Upload your photo here</p>
-<img src="Images/photo.png" alt="Yuvraj Trivedi">
+<img src="Images/photo.png" alt="Yuvraj Trivedi" class="w-full h-full object-cover" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=500&q=80';">
 </div>
 </div>
 </div>
@@ -134,52 +134,7 @@ Motivated and detail-oriented professional specializing in software development,
 </div>
 </div>
 </section>
-<div class="absolute inset-0 bg-white/80 dark:bg-gray-900/80 theme-transition"></div>
-<div class="relative z-10 w-full max-w-7xl mx-auto">
-<div class="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
-<div class="space-y-4 lg:space-y-6 order-2 lg:order-1">
-<h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
-I'm <span class="text-primary">Yuvraj Trivedi</span>
-</h1>
-<p class="text-lg sm:text-xl text-gray-600 dark:text-gray-400">
-A passionate Computer Science graduate with expertise in Python, Java, SQL, and Software Testing.
-</p>
-<p class="text-base sm:text-lg text-gray-700 dark:text-gray-300">
-Motivated and detail-oriented professional specializing in software development, troubleshooting, and IT support.
-</p>
-<div class="flex flex-col sm:flex-row gap-3 sm:gap-4 pt-2">
-<button class="!rounded-button whitespace-nowrap px-6 sm:px-8 py-3 bg-primary text-white hover:bg-secondary theme-transition font-medium text-sm sm:text-base">View Resume</button>
-<button class="!rounded-button whitespace-nowrap px-6 sm:px-8 py-3 border-2 border-primary text-primary hover:bg-primary hover:text-white theme-transition font-medium text-sm sm:text-base">Contact Me</button>
-</div>
-<div class="flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-8 pt-4 lg:pt-8">
-<div class="flex items-center space-x-2">
-<div class="w-8 h-8 flex items-center justify-center bg-blue-600 rounded">
-<i class="ri-building-line text-white text-sm"></i>
-</div>
-<span class="text-sm font-medium">Tech Mahindra</span>
-</div>
-<div class="flex items-center space-x-2">
-<div class="w-8 h-8 flex items-center justify-center bg-green-600 rounded">
-<i class="ri-building-2-line text-white text-sm"></i>
-</div>
-<span class="text-sm font-medium">e2Serv Ventures</span>
-</div>
-</div>
-</div>
-<div class="flex justify-center order-1 lg:order-2">
-<div class="w-64 h-64 sm:w-72 sm:h-72 lg:w-80 lg:h-80 rounded-2xl overflow-hidden shadow-2xl">
-<div class="w-full h-full bg-gray-200 dark:bg-gray-700 flex items-center justify-center">
-<div class="text-center">
-<i class="ri-user-line text-4xl text-gray-400 dark:text-gray-500 mb-2"></i>
-<p class="text-sm text-gray-500 dark:text-gray-400">Upload your photo here</p>
-<img src="Images/photo.png" alt="Yuvraj Trivedi" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=500&q=80';">
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
+
 <!-- About Section -->
 <section id="about" class="py-20 px-6 bg-gray-50 dark:bg-gray-800 theme-transition">
 <div class="max-w-7xl mx-auto">
@@ -232,6 +187,7 @@ With a detail-oriented approach and strong problem-solving abilities, I continuo
 </div>
 </div>
 </section>
+
 <!-- Experience Section -->
 <section id="experience" class="py-16 sm:py-20 px-4 sm:px-6">
 <div class="max-w-7xl mx-auto">
@@ -247,6 +203,7 @@ With a detail-oriented approach and strong problem-solving abilities, I continuo
 </div>
 </div>
 </section>
+
 <!-- Skills Section -->
 <section id="skills" class="py-20 px-6 bg-gray-50 dark:bg-gray-800 theme-transition">
 <div class="max-w-7xl mx-auto">
@@ -289,6 +246,7 @@ Programming Languages
 </div>
 </div>
 </div>
+
 <div class="bg-white dark:bg-gray-700 p-4 sm:p-6 rounded-xl shadow-sm theme-transition">
 <h3 class="text-base sm:text-lg font-semibold mb-3 sm:mb-4 flex items-center">
 <div class="w-5 h-5 sm:w-6 sm:h-6 flex items-center justify-center mr-2 flex-shrink-0">
@@ -323,6 +281,7 @@ Software Testing
 </div>
 </div>
 </div>
+
 <div class="bg-white dark:bg-gray-700 p-4 sm:p-6 rounded-xl shadow-sm theme-transition">
 <h3 class="text-base sm:text-lg font-semibold mb-3 sm:mb-4 flex items-center">
 <div class="w-5 h-5 sm:w-6 sm:h-6 flex items-center justify-center mr-2 flex-shrink-0">
@@ -351,6 +310,7 @@ Testing Tools
 </div>
 </div>
 </div>
+
 <div class="bg-white dark:bg-gray-700 p-4 sm:p-6 rounded-xl shadow-sm theme-transition">
 <h3 class="text-base sm:text-lg font-semibold mb-3 sm:mb-4 flex items-center">
 <div class="w-5 h-5 sm:w-6 sm:h-6 flex items-center justify-center mr-2 flex-shrink-0">
@@ -365,6 +325,7 @@ Frameworks & Methodologies
 <span class="inline-block bg-primary/10 text-primary px-2 sm:px-3 py-1 rounded-full text-xs sm:text-sm ml-1 sm:ml-2">DevOps</span>
 </div>
 </div>
+
 <div class="bg-white dark:bg-gray-700 p-4 sm:p-6 rounded-xl shadow-sm theme-transition">
 <h3 class="text-base sm:text-lg font-semibold mb-3 sm:mb-4 flex items-center">
 <div class="w-5 h-5 sm:w-6 sm:h-6 flex items-center justify-center mr-2 flex-shrink-0">
@@ -383,6 +344,7 @@ Software & Tools
 </div>
 </div>
 </section>
+
 <!-- Certifications Section -->
 <section id="certifications" class="py-16 sm:py-20 px-4 sm:px-6">
 <div class="max-w-7xl mx-auto">
@@ -398,6 +360,7 @@ Software & Tools
 </div>
 </div>
 </section>
+
 <!-- Projects Section (Now Dynamic via JS) -->
 <section id="projects" class="py-20 px-6 bg-gray-50 dark:bg-gray-800 theme-transition">
 <div class="max-w-7xl mx-auto">
@@ -413,6 +376,7 @@ Software & Tools
 </div>
 </div>
 </section>
+
 <!-- Contact Section -->
 <section id="contact" class="py-20 px-6">
 <div class="max-w-4xl mx-auto">
@@ -486,6 +450,7 @@ Software & Tools
 </div>
 </div>
 </section>
+
 <!-- Footer -->
 <footer class="py-8 px-6 bg-gray-900 text-white">
 <div class="max-w-7xl mx-auto">
@@ -501,6 +466,7 @@ Software & Tools
 </div>
 </div>
 </footer>
+
 <!-- Floating Social Icons -->
 <div class="fixed right-6 top-1/2 transform -translate-y-1/2 z-40 space-y-4">
 <a href="https://in.linkedin.com/in/yuvrajtrivedi" class="block w-12 h-12 bg-blue-600 hover:bg-blue-700 text-white rounded-full shadow-lg hover:shadow-xl theme-transition flex items-center justify-center">
@@ -510,6 +476,7 @@ Software & Tools
 <i class="ri-github-fill"></i>
 </a>
 </div>
+
 <script id="theme-toggle-script">
 document.addEventListener('DOMContentLoaded', function() {
 const themeToggle = document.getElementById('theme-toggle');
@@ -523,6 +490,7 @@ localStorage.setItem('theme', currentTheme);
 });
 });
 </script>
+
 <script id="mobile-menu-script">
 document.addEventListener('DOMContentLoaded', function() {
 const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
@@ -538,6 +506,7 @@ mobileMenu.classList.add('hidden');
 });
 });
 </script>
+
 <script id="certifications-pagination-script">
 document.addEventListener('DOMContentLoaded', function() {
 const certifications = [
@@ -615,6 +584,7 @@ image: "https://images.unsplash.com/photo-1535223289827-42f1e9919769?w=500&auto=
 const itemsPerPage = 3;
 let currentPage = 1;
 const totalPages = Math.ceil(certifications.length / itemsPerPage);
+
 function renderCertifications() {
 const container = document.getElementById('certifications-container');
 const startIndex = (currentPage - 1) * itemsPerPage;
@@ -639,6 +609,7 @@ container.innerHTML = currentCertifications.map(cert => `
 </div>
 `).join('');
 }
+
 function renderPagination() {
 const container = document.getElementById('pagination-container');
 let paginationHTML = '';
@@ -685,6 +656,7 @@ renderCertifications();
 renderPagination();
 });
 </script>
+
 <script id="experience-pagination-script">
 document.addEventListener('DOMContentLoaded', function() {
 const experiences = [
